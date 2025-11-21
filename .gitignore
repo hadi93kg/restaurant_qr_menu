@@ -1,0 +1,8 @@
+rest/
+venv/
+pycache/
+*.pyc
+*.pyo
+*.pyd
+static/qrcodes/*
+static/uploads/*

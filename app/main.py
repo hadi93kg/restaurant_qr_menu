@@ -14,7 +14,7 @@ templates = Jinja2Templates(directory="app/templates")
 @app.get("/")
 def home(request: Request):
     qr_path = "app/static/uploads/menu_qr.png"
-    url = "http://127.0.0.1:8000/menu"  # بعداً روی Render تغییر می‌کنیم
+    url = "https://restaurant-qr-menu-irzq.onrender.com/"  # بعداً روی Render تغییر می‌کنیم
     if not os.path.exists(qr_path):
         qr = qrcode.QRCode(box_size=10, border=4)
         qr.add_data(url)
